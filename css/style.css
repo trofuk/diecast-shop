@@ -1,0 +1,500 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	min-width: 980px;
+	background: #6b4306;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6B4306), color-stop(0.82, #6b4306), color-stop(0.89, #b68d4c), color-stop(0.94, #c19e67), to(#e9d4b3));
+	background: -webkit-linear-gradient(#6b4306 0%, #6B4306 82%, #b68d4c 89%, #c19e67 94%, #e9d4b3 100%);
+	background: -moz-linear-gradient(#6b4306 0%, #6b4306 82%, #b68d4c 89%, #c19e67 94%, #e9d4b3 100%);
+	background: -o-linear-gradient(#6b4306 0%, #6b4306 82%, #b68d4c 89%, #c19e67 94%, #e9d4b3 100%);
+	background: linear-gradient(#6b4306 0%, #6b4306 82%, #b68d4c 89%, #c19e67 94%, #e9d4b3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4306', endColorstr='#e9d4b3', GradientType=0 );
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	min-width: 980px;
+	background: url(../images/header-bg_g.jpg) no-repeat top center;
+	margin: 0;
+	position: relative;
+}
+/* Хедер */
+.header{
+	min-width: 980px;
+	position: relative;
+	background-size: 100%;
+	height:640px;
+}
+
+.header-content{
+	width: 980px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;	
+}
+/* Логотип */
+.logo{
+	position: absolute;
+    top: 152px;
+	display: block;
+}
+/* Верхня менюшка */
+.site-nav {
+	position:absolute;
+	width: 980px;
+	height: 150px;
+	margin: 50px auto;
+}
+/* Нижня менюшка */
+.site-nav-2 {
+	position:absolute;
+	margin: 500px 80px;
+}
+
+.site-nav-2 ul{
+	margin: 0;
+	padding-left: 0;
+}
+
+.site-nav-2 ul li {
+	float:left;
+	font-size:50px;
+	line-height:1.2em;
+	padding: 0 30px;
+	list-style-type: none;
+	font-family: 'EB Garamond', serif;
+	vertical-align:middle;
+	font-weight:normal;
+	font-style: italic;
+}
+
+.site-nav-2 ul li a {
+	text-decoration:none;
+	color:#5c1e18;
+}
+
+.site-nav-2 ul li a:hover {
+	color:#6e6774;
+}
+
+
+.main{
+	width: 980px;
+	background:url(../images/contentBg.jpg) 0 0 repeat-y;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+/* Лівий блок */
+.leftBlock {
+	float: left;
+	width: 275px;
+	padding-top: 6px;
+	padding-bottom: 20px;
+}
+/* Заголовок */
+.ltit {
+	width: 246px;
+	height: 41px;
+	background: url(../images/ltit.png) 0 0 no-repeat;
+	margin-bottom: 5px;
+}
+
+.ltit p {
+	font: 700 14px/36px Times New Roman;
+	color: #573617;
+	text-transform: uppercase;
+	padding: 0 37px 0 12px;
+}
+/* Блоки вводу з кнопками */
+.distributionBlock {
+	padding: 5px 0 5px 30px;
+	margin-bottom: 10px;
+}
+
+.distr_input {
+	border: 1px solid #000;
+	border: 1px solid rgba(0,0,0,0.4);
+	width: 163px;
+	height: 19px;
+	padding: 3px 10px;
+	background: none;
+	margin-bottom: 10px;
+	font: 12px/19px Arial,sans-serif;
+	box-shadow: inset 0 0 7px rgba(0,0,0,0.5), 2px 2px 4px rgba(255,255,255,0.8);
+	-webkit-transition: box-shadow 0.3s ease;
+	-moz-transition: box-shadow 0.3s ease;
+	-ms-transition: box-shadow 0.3s ease;
+	-o-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+.distr_input:focus {
+	border-color: #fff;
+	border-color: rgba(255,255,255,0.5);
+	box-shadow: 0 0 5px #fff;
+}
+
+.distr_input::-webkit-input-placeholder  {
+	color:#26120c; 
+}
+input.distr_input:-moz-placeholder { 
+	color:#26120c; 
+}
+
+.distr_but {
+	display: inline;
+	width: 144px;
+	height: 47px;
+	font: 12px/12px Times New Roman;
+	color: #c5c19d;
+	padding: 0 0 7px 0;
+	border: none;
+	margin-left: 22px;
+	vertical-align: top;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+	background: url(../images/sprite.png) 0 -60px no-repeat;
+}
+
+.distr_but:hover{  
+	background-position: 0 -108px;
+}
+/* Блок новин */
+.newsContent {  
+	padding: 5px 32px 5px 25px;
+}
+
+.newsBlock {  
+	padding: 20px 10px;
+}
+
+.newsBlock+.newsBlock {
+	border-top: 1px dashed #7f644a;
+}
+
+.newsBlock .date {
+	font-size: 10px;
+	color: #573617;
+	line-height: 16px;
+}
+
+.newsBlock a {
+	display: inline-block;
+	//display: inline;
+	//zoom: 1;
+	vertical-align: top;
+	font-size: 13px;
+	line-height: 16px;
+	text-decoration: none;
+	color: #000;
+}
+
+.newsBlock a:hover {
+	text-decoration: underline;
+}
+
+.tar {
+	text-align: right;
+}
+
+.newsContent .tar a {
+	font-size: 13px;
+	color: #573617;
+}     
+
+.newsContent .tar a:hover { 
+	text-decoration: none;
+}
+
+/* Правий блок */
+.rightBlock {
+	float: right;
+	width: 705px;
+	padding: 20px 0;
+}
+/* Заголовок */
+.ctit {
+	position: relative;
+	margin: 0  auto;
+	width: 675px;
+	height: 41px;
+	background: url(../images/ctit.png) 0 0 no-repeat;
+	padding: 7px 47px;
+}
+	
+.ctit p {
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	font: 700 18px/24px Times New Roman;
+	color: #543518;
+	text-transform: uppercase;
+	height: 24px;
+	overflow: hidden;
+}
+/* Слайдер	 */
+.carousel_wrapper{
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 0 15px;
+}
+		
+.carousel .owl-prev, .carousel .owl-next{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	text-align: center;
+	color:none;
+}
+	
+.carousel .owl-prev{
+	left: -15px;
+	position: absolute;
+	width: 15px;
+	height: 30px;
+	background: url(../images/sprite.png) 0 -371px no-repeat;
+}
+.carousel .owl-next{
+	right: -15px;
+	position: absolute;
+	width: 15px;
+	height: 30px;
+	background: url(../images/sprite.png) -16px -371px no-repeat;
+	}
+	
+.boxImg {
+	position: relative;
+	width: 193px;
+	height: 108px;
+	margin: 2px 0 5px 0;
+	line-height: 108px;
+	text-align: center;
+	background: #fff;
+}
+	
+.boxImg img {
+	max-height: 100%;
+	max-width: 100%;
+	display: inline-block;
+}
+	
+.boxImg a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 193px;
+	height: 108px;
+	background: url(../images/decorImg4.png) 0 0 no-repeat;
+}
+	
+
+.tName {
+	display: block;
+	font: 700 14px/18px Times New Roman;
+	color: #5c1e18;
+	text-decoration: none;
+	overflow: hidden;
+	height: 36px;
+}
+	
+.tName:hover {
+	text-decoration: underline;
+}
+	
+.price {  
+	height: 33px;  padding: 3px;
+}
+	
+.price p {
+	float: left;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 27px;
+}
+	
+.buyBtn {
+	float: right;
+	display: block;
+	width: 98px;
+	height: 32px;
+	font: 12px/27px Times New Roman;
+	color: #c5c19d !important;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	text-align: center;
+	background: url(../images/sprite.png) 0 -293px no-repeat;
+}
+	
+.buyBtn:hover {
+	background-position: 0 -325px;
+}
+/* Футер */		
+.footer{
+	min-height: 350px;
+	position: relative;
+	background: url(../images/footer-bg.jpg) no-repeat bottom center;
+	padding-top:200px;
+}
+	
+.footer-content{
+	width: 980px;
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+}
+/* Менюшка футера */	
+.buttons{
+	position: absolute;
+	margin: 0 65px;
+}
+	
+.copyright{
+	position: absolute;
+	margin-top: 90px;
+	font-size:13px;
+}
+.designed{
+	position: absolute;
+	margin-top: 90px;
+	margin-left: 787px;
+	font-size:13px;
+}		
+
+/* Для екранів від 480px до 767px */
+@media (max-width:767px)
+{
+html{	
+	min-width: 480px;
+}
+	
+body{
+	min-width: 480px;
+}
+
+.header{
+	min-width: 480px;
+	position: relative;
+	background-size: 100%;
+	height:640px;
+}
+
+.header-content{
+	width: 480px;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;	
+}
+	
+.logo{
+	position: absolute;
+	top: 230px;
+	display: block;
+	width: 40%;
+}
+
+.logo-pic{
+	width: 100%;	
+}
+
+.site-nav {
+	position:absolute;
+	width: 480px;
+	height: 150px;
+	margin: 50px auto;
+}
+	
+#link{
+	display:none;	
+}
+
+.site-nav-2 {
+	position:absolute;
+	margin: 465px 40px;
+}
+
+.site-nav-2 ul li {
+	float:left;
+	font-size:40px;
+	line-height:1.2em;
+	padding: 0 45px;
+}
+
+.main{
+	width: 480px;
+}
+	
+.leftBlock {
+	float: left;
+	width: 480px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+	
+.ltit {
+	width: 480px;
+	height: 41px;
+	background: url(../images/ctit.png) 0 0 no-repeat;
+	margin-bottom: 5px;
+}
+
+.ltit p {
+	padding: 0 37px 0 45px;
+}
+			
+.distr_input {
+	width: 200px;
+	margin-right: 53px;
+}
+	
+.newsBlock {  
+	padding: 5px 10px;
+}
+		
+.rightBlock {
+	float: left;
+	width: 480px;
+	padding: 5px 0;
+}
+
+.ctit {
+	position: relative;
+	margin: 0  auto;
+	width: 480px;
+	height: 41px;
+	background: url(../images/ctit.png) 0 0 no-repeat;
+	padding: 7px 47px;
+}
+	
+.footer{
+	min-height: 150px;
+	padding-top:10px;
+}
+	
+.footer-content{
+	width: 480px;
+	height: 150px;
+}
+		
+#news{
+	display:none;	
+}
+	
+.copyright{
+	position: absolute;
+	margin-top: 95px;
+	font-size:11px;
+}
+			
+.designed{
+	position: absolute;
+	margin-top: 95px;
+	margin-left: 315px;
+	font-size:11px;
+}
+}
